@@ -1,22 +1,27 @@
-<script>
-  function toggleImage(id) {
-  var img = document.getElementById(id);
-            if (img.style.display === "inline-block") {
-                img.style.display = "none";  // Hide the image
-            } else {
-                img.style.display = "inline-block";  // Show the image
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+  function showImage(id) {
+    document.getElementById(id).style.display = "inline-block";
   }
 </script>
+</head>
+<body>
+    <h1 style="color: dodgerblue;">JavaScript Tutorial 4</h1>
 
-<h1 style="color: dodgerblue;">JavaScript Tutorial 4</h1>
-
-<button onclick="toggleImage('view')">My View</button>
-<button onclick="toggleImage('house')">My House</button>
-<button onclick="toggleImage('hobby')">My Hobby</button>
+<button onclick="showImage('view')">My View</button>
+<button onclick="showImage('house')">My House</button>
+<button onclick="showImage('hobby')">My Hobby</button>
 <button onclick="this.innerHTML = Date()">Time</button>
 <button onclick="window.print()">Print Page</button><br>
 
-<img id="view" src="images01.jpg.jpg" style="display:none;">
-<img id="house" src="images02.jpg" style="display:none;">
-<img id="hobby" src="image03.jpg" style="display:none;">
+<img id="view" src="images01.jpg.jpg" style="display: none;">
+<img id="house" src="images02.jpg" style="display: none;">
+<img id="hobby" src="image03.jpg" style="display: none;">
+</body>
+</html>
+
