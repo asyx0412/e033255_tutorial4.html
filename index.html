@@ -1,7 +1,11 @@
 <script>
   function toggleImage(id) {
-    var img = document.getElementById(id);
-    img.style.display = (img.style.display === "none" || img.style.display === "") ? "inline-block" : "none";
+  var img = document.getElementById(id);
+            if (img.style.display === "inline-block") {
+                img.style.display = "none";  // Hide the image
+            } else {
+                img.style.display = "inline-block";  // Show the image
+            }
   }
 </script>
 
