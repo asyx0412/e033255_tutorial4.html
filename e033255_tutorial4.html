@@ -1,0 +1,18 @@
+<script>
+  function toggleImage(id) {
+    var img = document.getElementById(id);
+    img.style.display = (img.style.display === "none" || img.style.display === "") ? "inline-block" : "none";
+  }
+</script>
+
+<h1 style="color: dodgerblue;">JavaScript Tutorial 4</h1>
+
+<button onclick="toggleImage('view')">My View</button>
+<button onclick="toggleImage('house')">My House</button>
+<button onclick="toggleImage('hobby')">My Hobby</button>
+<button onclick="this.innerHTML = Date()">Time</button>
+<button onclick="window.print()">Print Page</button><br>
+
+<img id="view" src="images01.jpg.jpg" style="display:none;">
+<img id="house" src="images02.jpg" style="display:none;">
+<img id="hobby" src="image03.jpg" style="display:none;">
